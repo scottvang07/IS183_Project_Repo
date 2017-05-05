@@ -1,0 +1,39 @@
+<!--how to display button
+<p>
+    <button (click)="goToCreate()">Click Here</button>
+</p>-->
+
+<section class="items">
+  <h1 class = "most-popular">MOST POPULAR</h1>
+  <section class="regular1-slider">
+    <ul>
+      <div class="book-card" *ngFor="let book of books | slice:0:4" [routerLink]="['book',book._id] ">
+        <P>{{book.title}}</P>
+        <P>{{book.author}}</P>
+        <button (click)="deleteBook(book._id)">X</button>
+      </div>
+    </ul>
+  </section>
+
+  <h1 class="recently-viewed">RECENTLY VIEWED</h1>
+  <section class="regular2-slider">
+    <ul>
+      <div class="book-card" *ngFor="let book of books | slice:4:8" [routerLink]="['book',book._id] ">
+        <P>{{book.title}}</P>
+        <P>{{book.author}}</P>
+        <button (click)="deleteBook(book._id)">X</button>
+      </div>
+    </ul>
+  </section>
+
+  <h1 class = "book-categories">BOOK CATEGORIES</h1>
+  <section class="regular3-slider">
+    <ul>
+      <div class="book-card" *ngFor="let book of books | slice:0:4" [routerLink]="['book',book._id] ">
+        <P>{{book.title}}</P>
+        <P>{{book.author}}</P>
+        <button (click)="deleteBook(book._id)">X</button>
+      </div>
+    </ul>
+  </section>
+</section>

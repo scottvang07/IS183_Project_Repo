@@ -1,0 +1,36 @@
+.book-card {
+    width:20%; 
+    margin:5px;
+    height:250px;
+    padding:5px;
+    float:left;
+    background-color:#CCC;
+}
+.regular1-slider li {
+        display: inline-block;
+    }
+    .regular1-slider img {
+        height: 200px;
+        width: 200px;
+    }
+    .regular2-slider li {
+        display: inline-block;
+    }
+    .regular2-slider img {
+        height: 200px;
+        width: 200px;
+    }
+    .regular3-slider li {
+        display: inline-block;
+    }
+    .regular3-slider img {
+        height: 200px;
+        width: 200px;
+    }
+     .recently-viewed {
+        display: inline-block;
+    }
+    .book-categories {
+        display: inline-block;
+    }
+   
