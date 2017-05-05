@@ -1,3 +1,6 @@
+section.items {
+    flex: 1;
+}
 .book-card {
     width:20%; 
     margin:5px;
@@ -6,7 +9,29 @@
     float:left;
     background-color:#CCC;
 }
-.regular1-slider li {
+section.book-image {
+    width: 90%;
+    height: 180px;
+    margin-left: 5%;
+    background-color: pink;
+    margin-bottom: -12px;
+}
+section.book-image img {
+    width: 100%;
+    height: 100%;
+}
+section.book-details {
+    background-color: pink;
+    margin-bottom: 50%;
+}
+section.book-details p {
+    font-size: 12px;
+}
+p.book-title {
+    font-size: 14px !important;
+    font-weight: 500;
+}
+    .regular1-slider li {
         display: inline-block;
     }
     .regular1-slider img {
