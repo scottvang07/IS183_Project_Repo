@@ -3,7 +3,7 @@ import { BookService } from '../book.service';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-book',
+  selector: 'book',
   templateUrl: './book.component.html',
   styleUrls: ['./book.component.css']
 })
@@ -24,5 +24,7 @@ export class BookComponent implements OnInit {
         this.book = resp;
      });
   }
+  
+  
 
 }

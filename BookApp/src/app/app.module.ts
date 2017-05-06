@@ -24,7 +24,7 @@ const appRoutes: Routes = [
     AppComponent,
     BooksComponent,
     BookCreateComponent,
-    BookComponent
+    BookComponent,
   ],
   imports: [
     BrowserModule,
