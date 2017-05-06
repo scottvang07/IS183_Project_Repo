@@ -51,6 +51,30 @@ div.book-details {
     border-left: solid thin;
     margin-top: 1%;
 }
+div.hardcover-container {
+    height: 100px;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 9%;
+    border-bottom: solid thin;
+}
+
+p.hardcover-tag {
+    font-size: 18px;
+    text-align: center;
+}
+p.price-tag {
+    font-size: 18px;
+}
+div.price-container {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    padding: 13px;
+    margin-left: 30%;
+    margin-top: 8%;
+    font-size: 24px;
+}
 div.related-books {
     width: 100%;
     height: 40%;
@@ -61,8 +85,7 @@ div.related-books {
     div.add-to-cart {
       height: 70px;
       width: 200px;
-      margin-top: 60%;
-      margin-left: 20%;
+      margin-left: 24%;
     }
     button.cart-button {
       padding: 15px 30px;
@@ -80,7 +103,7 @@ div.related-books {
     div.shipping-details {
         height: 100px;
         width: 100%;
-        margin-left: 5%; 
+        margin-left: 10%; 
     }
     div.shipping-details p {
         font-size: 14px;

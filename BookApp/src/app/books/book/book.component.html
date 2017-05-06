@@ -10,14 +10,19 @@
       </div>
     </div>
     <div class="book-description">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed amet id quaerat sequi minus asperiores quibusdam fugiat
-        pariatur ipsa quam consequatur, soluta repudiandae quidem obcaecati placeat officia. Dignissimos, veritatis, ex.</p>
+      <div *ngIf="book"> <!--allows to reload information drawn from API-->
+        <P>{{book.genre}}</P>
+        <p>{{book.description}}</p>
+      </div>
     </div>
   </div>
   <div class="book-details">
-    <div *ngIf="book">
-      <P>{{book.read}}</P>
-      <P>Price</P>
+    <div class="hardcover-container">
+      <p class="hardcover-tag">Physical Hardcover</p>
+      <p class="hardcover-tag" > E-Book Available Upon Purchase</p>
+    </div>
+    <div class = "price-container" *ngIf="book">
+      <P>$ {{book.price}}</P>
     </div>
     <div class="add-to-cart">
       <button onclick="submit()" class="cart-button" type="button" name="submit">Add to Cart</button>
@@ -29,8 +34,6 @@
 </div>
 <div class="related-books">
   <h1>Related Books</h1>
-  <div class="book-card" *ngFor="let book of books | slice:0:1" [routerLink]="['book',book._id] ">
-      <P>By {{book.author}}</P>
-  </div>
+
 </div>
 </section>
