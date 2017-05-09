@@ -8,57 +8,23 @@
 
     <link rel="icon" href="./assets/img/favi.png">
 </head>
-
 <body>
     <div class="container">
         <div class="wrapper">
-            <header class="top-logo">
-            </header>
-
-            <nav class="top-nav">
-                <ul class="top-links">
-                    <li><a href="#">HOME </a></li>
-                    <li><a href="#">BOOKS </a></li>
-                    <li><a href="#">ABOUT US </a></li>
-                    <li><a href="#">CONTACT US </a></li>
-                    <li><a href="#">LOG IN </a></li>
-                </ul>
-            </nav>
-
-            <div class="slideshow">
-                <ul class="rslides">
-                    <li><img src="./assets/img/slide2.png" alt="" height="400"></li>
-                    <li><img src="./assets/img/slide1.png" alt="" height="400"></li>
-                    <li><img src="./assets/img/slide3.png" alt="" height="400"></li>
-                </ul>
-            </div>
-
+            <header class="top-logo"></header>
+            <main-nav> </main-nav>
             <section class="items">
                 <section class="galleries">
                     <ul>
                         <router-outlet></router-outlet>
                     </ul>
                 </section>
-               
-                
             </section>
 
             <!-- <aside class="recent">
             </aside>!-->
-
-            <footer class="footer-copyright">
-                <aside class="social-links">
-                  <ul>
-                    <li><img src="./assets/img/32x32-facebook.png" alt="Facebook-icon"></li>
-                    <li><img src="./assets/img/32x32-instagram.png" alt="Instgram-icon"></li>
-                    <li><img src="./assets/img/32x32-linkedin.png" alt="Linkined-icon"></li>
-                    <li><img src="./assets/img/32x32-pinterest.png" alt="Pinterest-icon"></li>
-                    <li><img src="./assets/img/32x32-twitter.png" alt="Twitter-icon"></li>
-                    <li><img src="./assets/img/32x32-youtube.png" alt="Youtube-icon"></li>
-                  </ul>
-                </aside>
-                &copy; ELEVATE TEAM 2017
-            </footer>
+            <main-footer></main-footer>
+            
         </div>
     </div>
 

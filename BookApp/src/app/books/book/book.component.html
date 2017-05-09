@@ -25,7 +25,9 @@
       <P>$ {{book.price}}</P>
     </div>
     <div class="add-to-cart">
-      <button onclick="submit()" class="cart-button" type="button" name="submit">Add to Cart</button>
+      <!--<button onclick="submit()" class="cart-button" type="button" name="submit">Add to Cart</button>-->
+          <button class="cart-button" type="button" name="submit" (click)="goToCart()">Add to Cart</button>
+
     </div>
     <div class="shipping-details">
       <p>Eligible for FREE SHIPPING</p>

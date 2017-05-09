@@ -1,12 +1,7 @@
-<!--how to display button
-<p>
-    <button (click)="goToCreate()">Click Here</button>
-</p>-->
-
 <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
 
 <section class="items">
-  <h1 class="most-popular">MOST POPULAR</h1>
+  <h1 class="most-popular">MATHEMATICS</h1>
   <section class="regular1-slider">
     <ul>
       <div class="book-card" *ngFor="let book of books | slice:0:1" [routerLink]="['book',book._id] ">
@@ -15,8 +10,8 @@
         </section>
         <section class="book-details">
           <P class = "book-title">{{book.title}}</P>
-          <P class = "book-author">By: {{book.author}}</P>
-         <!-- <button (click)="deleteBook(book._id)">X</button> "How to remove a record from database" --> 
+          <P>By {{book.author}}</P>
+          <button (click)="deleteBook(book._id)">X</button>
         </section>
       </div>
     </ul>
@@ -26,9 +21,9 @@
           <img src="./assets/img/placeholder2.png">
         </section>
         <section class="book-details">
-          <P class = "book-title">{{book.title}}</P>
-          <P class = "book-author">By: {{book.author}}</P>
-          
+          <P>{{book.title}}</P>
+          <P>{{book.author}}</P>
+          <button (click)="deleteBook(book._id)">X</button>
         </section>
       </div>
     </ul>
@@ -38,9 +33,9 @@
           <img src="./assets/img/placeholder3.png">
         </section>
         <section class="book-details">
-          <P class = "book-title">{{book.title}}</P>
-          <P class = "book-author">By: {{book.author}}</P>
-          
+          <P>{{book.title}}</P>
+          <P>{{book.author}}</P>
+          <button (click)="deleteBook(book._id)">X</button>
         </section>
       </div>
     </ul>
@@ -50,15 +45,15 @@
           <img src="./assets/img/placeholder4.png">
         </section>
         <section class="book-details">
-          <P class = "book-title">{{book.title}}</P>
-          <P class = "book-author">By: {{book.author}}</P>
-          
+          <P>{{book.title}}</P>
+          <P>{{book.author}}</P>
+          <button (click)="deleteBook(book._id)">X</button>
         </section>
       </div>
     </ul>
   </section>
 
-  <h1 class="recently-viewed">RECENTLY VIEWED</h1>
+  <h1 class="recently-viewed">COMPUTER INFORMATION</h1>
   <section class="regular2-slider">
     <ul>
       <div class="book-card" *ngFor="let book of books | slice:4:5" [routerLink]="['book',book._id] ">
@@ -66,9 +61,9 @@
            <img src = "./assets/img/placeholder.png">
         </section>
         <section class="book-details">
-          <P class = "book-title">{{book.title}}</P>
-          <P class = "book-author">By: {{book.author}}</P>
-          
+          <P>{{book.title}}</P>
+          <P>{{book.author}}</P>
+          <button (click)="deleteBook(book._id)">X</button>
         </section>
       </div>
     </ul>
@@ -78,9 +73,9 @@
            <img src = "./assets/img/placeholder2.png">
         </section>
         <section class="book-details">
-          <P class = "book-title">{{book.title}}</P>
-          <P class = "book-author">By: {{book.author}}</P>
-          
+          <P>{{book.title}}</P>
+          <P>{{book.author}}</P>
+          <button (click)="deleteBook(book._id)">X</button>
         </section>
       </div>
     </ul>
@@ -90,9 +85,9 @@
            <img src = "./assets/img/placeholder3.png">
         </section>
         <section class="book-details">
-          <P class = "book-title">{{book.title}}</P>
-          <P class = "book-author">By: {{book.author}}</P>
-          
+          <P>{{book.title}}</P>
+          <P>{{book.author}}</P>
+          <button (click)="deleteBook(book._id)">X</button>
         </section>
       </div>
     </ul>
@@ -102,15 +97,15 @@
            <img src = "./assets/img/placeholder4.png">
         </section>
         <section class="book-details">
-          <P class = "book-title">{{book.title}}</P>
-          <P class = "book-author">By: {{book.author}}</P>
-          
+          <P>{{book.title}}</P>
+          <P>{{book.author}}</P>
+          <button (click)="deleteBook(book._id)">X</button>
         </section>
       </div>
     </ul>
   </section>
 
-  <h1 class="book-categories">BOOK CATEGORIES</h1>
+  <h1 class="book-categories">PHYSICS</h1>
   <section class="regular3-slider">
     <ul>
       <div class="book-card" *ngFor="let book of books | slice:8:9" [routerLink]="['book',book._id] ">
@@ -118,9 +113,9 @@
            <img src = "./assets/img/placeholder.png">
         </section>
         <section class="book-details">
-          <P class = "book-title">{{book.title}}</P>
-          <P class = "book-author">By: {{book.author}}</P>
-          
+          <P>{{book.title}}</P>
+          <P>{{book.author}}</P>
+          <button (click)="deleteBook(book._id)">X</button>
         </section>
       </div>
     </ul>
@@ -130,9 +125,9 @@
            <img src = "./assets/img/placeholder2.png">
         </section>
         <section class="book-details">
-          <P class = "book-title">{{book.title}}</P>
-          <P class = "book-author">By: {{book.author}}</P>
-          
+          <P>{{book.title}}</P>
+          <P>{{book.author}}</P>
+          <button (click)="deleteBook(book._id)">X</button>
         </section>
       </div>
     </ul>
@@ -142,9 +137,9 @@
            <img src = "./assets/img/placeholder3.png">
         </section>
         <section class="book-details">
-          <P class = "book-title">{{book.title}}</P>
-          <P class = "book-author">By: {{book.author}}</P>
-          
+          <P>{{book.title}}</P>
+          <P>{{book.author}}</P>
+          <button (click)="deleteBook(book._id)">X</button>
         </section>
       </div>
     </ul>
@@ -154,9 +149,9 @@
            <img src = "./assets/img/placeholder4.png">
         </section>
         <section class="book-details">
-          <P class = "book-title">{{book.title}}</P>
-          <P class = "book-author">By: {{book.author}}</P>
-          
+          <P>{{book.title}}</P>
+          <P>{{book.author}}</P>
+          <button (click)="deleteBook(book._id)">X</button>
         </section>
       </div>
     </ul>
