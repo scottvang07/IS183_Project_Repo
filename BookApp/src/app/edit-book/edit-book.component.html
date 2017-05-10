@@ -1,0 +1,9 @@
+<h1>Edit Book</h1>
+<div *ngIf="book">
+  <span>{{book?.name}}</span>
+  <input type="text" [(ngModel)]="book.title">
+  <input type="text" [(ngModel)]="book.description">
+  <input type="text" [(ngModel)]="book.genre">
+  <input type="text" [(ngModel)]="book.price">
+  <button (click)="editBook(book)">test</button>
+</div>

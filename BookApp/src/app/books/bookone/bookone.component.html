@@ -1,0 +1,31 @@
+<!--<ul>
+    <div class="book-card" *ngFor="let book of books | slice:4:5" [routerLink]="['book',book._id] ">
+      <section class="book-image">
+        <img src="./assets/img/placeholder.png">
+      </section>
+      <section class="book-details">
+        <P>{{book.title}}</P>
+        <P>{{book.author}}</P>
+      </section>
+    </div>
+  </ul>-->
+<!--<section class="item-info">-->
+<section class="order-detail-container">
+  <ul class="item-info" *ngFor="let book of books | slice:0:1" [routerLink]="['book',book._id] ">
+    <!--<li><img src="./assets/img/placeholder.png"></li>-->
+    <div class="book-title-container">
+      <li>{{book.title}}</li>
+    </div>
+    <div class="book-id-container">
+      <li>{{book._id}}</li>
+    </div>
+    <div class="book-description-container">
+      <li>{{book.description}}</li>
+    </div>    
+    <div class="book-price-container">
+      <li>{{book.price}}</li>
+    </div>
+  </ul>
+</section>
+
+<!--</section>-->

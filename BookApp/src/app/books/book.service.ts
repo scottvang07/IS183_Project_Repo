@@ -35,7 +35,7 @@ export class BookService {
     addBook(book): Promise<Object> {
         return this.http.post(`${this.apiUrl}/books`, book).toPromise().then((resp) => {
             let book = resp.json();
-            console.log('book', book);
+            console.log('book from service...', book);
             return book;
         });
     }
@@ -52,7 +52,7 @@ export class BookService {
     updateBook(id, book): Promise<Object> {
         return this.http.put(`${this.apiUrl}/books/id/${id}`, book).toPromise().then((resp) => {
             let book = resp.json();
-            console.log('book', book);
+            console.log('book from updateBook in service....', book);
             return book;
         });
     }

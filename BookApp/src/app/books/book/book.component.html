@@ -1,4 +1,6 @@
 <section class="main-section">
+<button *ngIf="book" [routerLink]="['/edit-book',book._id]" >Edit Book</button>
+
   <div class="book-view">
     <div class="book-image">
       <img src="./assets/img/placeholder.png" alt="#">
@@ -10,7 +12,8 @@
       </div>
     </div>
     <div class="book-description">
-      <div *ngIf="book"> <!--allows to reload information drawn from API-->
+      <div *ngIf="book">
+        <!--allows to reload information drawn from API-->
         <P>{{book.genre}}</P>
         <p>{{book.description}}</p>
       </div>
@@ -21,19 +24,34 @@
       <p class="hardcover-tag">Physical Hardcover</p>
       <p class="hardcover-tag"> E-Book Available Upon Purchase</p>
     </div>
-    <div class = "price-container" *ngIf="book">
+    <div class="price-container" *ngIf="book">
       <P>$ {{book.price}}</P>
     </div>
     <div class="add-to-cart">
-      <button onclick="submit()" class="cart-button" type="button" name="submit">Add to Cart</button>
+      <!--<button onclick="submit()" class="cart-button" type="button" name="submit">Add to Cart</button>-->
+      <button class="cart-button" type="button" name="submit" (click)="goToCart()">Add to Cart</button>
+
     </div>
     <div class="shipping-details">
       <p>Eligible for FREE SHIPPING</p>
       <p>Get it by Tomorrow! Same Day delivery to Fresno, CA. Ensure option is selected during checkout process.</p>
     </div>
-</div>
-<div class="related-books">
-  <h1>Related Books</h1>
+  </div>
+  <div class="related-books">
+    <h1>More Books</h1>
+    <bookmore></bookmore>
+  </div>
+  <ul>
+    <div class="book-card" *ngFor="let book of books | slice:0:1" [routerLink]="['book',book._id] ">
+      <section class="book-image">
+        <img src="../assets/img/placeholder.png">
+      </section>
+      <section class="book-details">
+        <P class="book-title">{{book.title}}</P>
+        <P>By {{book.author}}</P>
+        <button (click)="deleteBook(book._id)">X</button>
+      </section>
+    </div>
+  </ul>
 
-</div>
 </section>

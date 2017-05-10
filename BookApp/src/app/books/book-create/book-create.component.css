@@ -1,0 +1,50 @@
+ /*cart*/
+    aside.summary
+	{
+		width:18%;
+		padding:1%;
+		height:500px;
+		float:right;
+	}
+    .summary ul
+	{
+		list-style-type: none;
+	}
+    section.cart
+	{
+		position: relative;
+		width:78%;
+		padding:1%;
+		height:auto;
+		float:left;
+        background-color:#FFF;
+	}
+    section.thanks{
+        text-align:center;
+    }
+	section.cart-info {
+		width: 100px;
+		position: absolute;
+	}
+	.cart-info ul {
+		width: 100px;
+	}
+
+	.cart-info li{
+		list-style-type: none;
+		display: block;
+		margin: 8%;
+		text-decoration-line: underline;
+		margin-bottom: 80px;
+	}
+
+	.item-info li{
+		list-style-type: none;
+		display: inline;
+		margin: 8%;
+		text-decoration-line: underline;
+		
+	}
+	.item-info{
+		margin-top: 20px;
+	}

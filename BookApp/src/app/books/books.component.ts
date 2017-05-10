@@ -21,8 +21,8 @@ export class BooksComponent implements OnInit {
   ngOnInit() {
     this.getBooks().then((resp) => {
       this.books = resp;
+      console.log('books', this.books);
     });
-    console.log('books', this.books);
   }
 
   getBooks() {

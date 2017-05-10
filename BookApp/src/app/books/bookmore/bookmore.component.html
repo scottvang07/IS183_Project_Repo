@@ -1,0 +1,51 @@
+<ul>
+  <div class="book-card" *ngFor="let book of books | slice:4:5" [routerLink]="['book',book._id] ">
+    <section class="book-image">
+      <img src="./assets/img/placeholder.png">
+    </section>
+    <section class="book-details">
+      <P class="book-title">{{book.title}}</P>
+      <P class="book-author">By: {{book.author}}</P>
+    </section>
+    <button class="cart-button" type="button" name="submit" (click)="goToCart()">Add to Cart</button>
+  </div>
+</ul>
+<ul>
+  <div class="book-card" *ngFor="let book of books | slice:6:7" [routerLink]="['book',book._id] ">
+    <section class="book-image">
+      <img src="./assets/img/placeholder.png">
+    </section>
+    <section class="book-details">
+      <P class="book-title">{{book.title}}</P>
+      <P class="book-author">By: {{book.author}}</P>
+    </section>
+    <button class="cart-button" type="button" name="submit" (click)="goToCart()">Add to Cart</button>
+  </div>
+</ul>
+<ul>
+  <div class="book-card" *ngFor="let book of books | slice:10:11" [routerLink]="['book',book._id] ">
+    <section class="book-image">
+      <img src="./assets/img/placeholder.png">
+    </section>
+    <section class="book-details">
+      <P class="book-title">{{book.title}}</P>
+      <P class="book-author">By: {{book.author}}</P>
+    </section>
+    <button class="cart-button" type="button" name="submit" (click)="goToCart()">Add to Cart</button>
+  </div>
+</ul>
+<ul>
+  <div class="book-card" *ngFor="let book of books | slice:3:4" [routerLink]="['book',book._id] ">
+    <section class="book-image">
+      <img src="./assets/img/placeholder.png">
+    </section>
+    <section class="book-details">
+      <P class="book-title">{{book.title}}</P>
+      <P class="book-author">By: {{book.author}}</P>
+      <!--<button (click)="deleteBook(book._id)">X</button>-->
+    </section>
+    <div class = "cart-button-container">
+      <button class="cart-button" type="button" name="submit" (click)="goToCart()">Add to Cart</button>
+    </div>
+  </div>
+</ul>

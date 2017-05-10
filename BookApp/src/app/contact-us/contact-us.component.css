@@ -1,0 +1,79 @@
+/* contact*/
+.contact
+	{
+	margin: 0 auto;
+	text-align:left;
+	width:500px;
+	padding:10px;
+	font-size:16px;
+    height:500px;
+	}
+	label
+	{
+		font-size:14px;
+	}
+	.f_name
+	{
+		height: 50px;
+      width: 100%;
+      font-size: 20px;
+      border: none;
+      background-color: #f2f2f2;
+	  border-radius: 10px;
+	}
+	.l_name {
+		height: 50px;
+      width: 100%;
+      font-size: 20px;
+      border: none;
+      background-color: #f2f2f2;
+	  border-radius: 10px;
+	}	
+	.e_mail {
+		height: 50px;
+      width: 100%;
+      font-size: 20px;
+      border: none;
+      background-color: #f2f2f2;
+	  border-radius: 10px;
+	}
+	 .message
+	{ 
+		height: 100px;
+      width: 100%;
+      font-size: 20px;
+      border: none;
+      background-color: #f2f2f2;
+      resize: none;
+	  border-radius: 10px;
+	}
+
+	button.grid-button 
+	{   
+		padding:3px; 
+		margin-bottom:5px;
+		border:1px solid black;
+		height:24px;
+    	cursor:pointer;
+		background-color:transparent;
+    	-webkit-border-radius: 5px;
+    	border-radius: 5px; 
+		font-size:12px;
+		float:right;
+    }
+	#submit
+	{
+        margin: 10px 10px;
+		padding:3px; 
+		border:1px solid black;
+		height:50px;
+		width: 80px;
+    	cursor:pointer;
+		background-color:transparent;
+    	-webkit-border-radius: 5px;
+    	border-radius: 5px; 
+		font-size:12px;
+	}
+	#submit:hover {
+		background-color:#CCC;
+	}

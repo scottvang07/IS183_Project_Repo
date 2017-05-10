@@ -1,7 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, enableProdMode } from '@angular/core';
 import { BookService } from '../book.service';
 import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 
+enableProdMode();
 @Component({
   selector: 'book',
   templateUrl: './book.component.html',
@@ -13,7 +15,9 @@ export class BookComponent implements OnInit {
 
   constructor(
     private bookService: BookService,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    private router: Router
+
   ) { }
 
   ngOnInit() {
@@ -23,6 +27,10 @@ export class BookComponent implements OnInit {
         console.log('resp book', resp);
         this.book = resp;
      });
+  }
+  goToCart() {
+    console.log('go to cart....;');
+    this.router.navigate(['cart']);
   }
   
   

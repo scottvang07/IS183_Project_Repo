@@ -9,14 +9,48 @@ import { BooksComponent } from './books/books.component';
 
 // service
 import { BookService } from './books/book.service';
+import { CategoryService } from './book-category/category.service';
 import { BookCreateComponent } from './books/book-create/book-create.component';
 import { BookComponent } from './books/book/book.component';
+import { MainNavComponent } from './main-nav/main-nav.component';
+import { MainFooterComponent } from './main-footer/main-footer.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { OrderDetailComponent } from './order-detail/order-detail.component';
+import { BookCategoryComponent } from './book-category/book-category.component';
+import { LoginComponent } from './login/login.component';
+import { ProfileComponent } from './profile/profile.component';
+import { RecentlyOrderComponent } from './recently-order/recently-order.component';
+import { UserAccountComponent } from './user-account/user-account.component';
+import { BookmoreComponent } from './books/bookmore/bookmore.component';
+import { BookoneComponent } from './books/bookone/bookone.component';
+import { NewBookComponent } from './new-book/new-book.component';
+import { EditBookComponent } from './edit-book/edit-book.component';
+
 
 // Routes
 const appRoutes: Routes = [
   { path: '', component: BooksComponent },
-  { path: 'book/:id',   component: BookComponent },
-  { path: 'create',   component: BookCreateComponent }
+  { path: 'book/:id', component: BookComponent },
+  { path: 'cart', component: BookCreateComponent },
+  { path: 'aboutus', component: AboutUsComponent},
+  { path: 'contactus', component: ContactUsComponent},
+  { path: 'orderdetail', component: OrderDetailComponent},
+  { path: 'bookcategory', component: BookCategoryComponent},
+  { path: 'login', component: LoginComponent},
+  { path: 'profile', component: ProfileComponent},
+  { path: 'recentlyorder', component: RecentlyOrderComponent},
+  { path: 'bookmore', component: BookmoreComponent},
+  { path: 'book', component: BookComponent },
+  { path: 'bookone', component: BookoneComponent},
+  { path: 'new-book', component: NewBookComponent},
+  { path: 'edit-book/:id', component: EditBookComponent},
+
+  
+
+
+
+
 ];
 
 @NgModule({
@@ -25,6 +59,20 @@ const appRoutes: Routes = [
     BooksComponent,
     BookCreateComponent,
     BookComponent,
+    MainNavComponent,
+    MainFooterComponent,
+    AboutUsComponent,
+    ContactUsComponent,
+    OrderDetailComponent,
+    BookCategoryComponent,
+    LoginComponent,
+    ProfileComponent,
+    RecentlyOrderComponent,
+    UserAccountComponent,
+    BookmoreComponent,
+    BookoneComponent,
+    NewBookComponent,
+    EditBookComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,7 +81,8 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes)
   ],
   providers: [
-    BookService
+    BookService,
+    CategoryService
   ],
   bootstrap: [AppComponent]
 })
