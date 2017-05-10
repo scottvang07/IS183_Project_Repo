@@ -21,22 +21,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-
-    this.title = 'Hello asdfasdf!';
-    this.links = [
-      { text: 'Lucas', href: 'http://google.com' },
-      { text: 'Lohn', href: 'http://google.com' },
-      { text: 'Mary', href: 'http://google.com' },
-      { text: 'Link 4', href: 'http://google.com' },
-      { text: 'Link 4', href: 'http://google.com' },
-      { text: 'Link 5', href: 'http://google.com' },
-      { text: 'Link 5', href: 'http://google.com' },
-      { text: 'Link 4', href: 'http://google.com' },
-      { text: 'Link 5', href: 'http://google.com' },
-      { text: 'Link 5', href: 'http://google.com' },
-      { text: 'Link 5', href: 'http://google.com' }
-    ]
-
+ 
     this.showLink = true;
   }
 

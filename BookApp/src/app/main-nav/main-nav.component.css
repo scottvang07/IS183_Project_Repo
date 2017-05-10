@@ -30,6 +30,10 @@
 	{
 		font-weight:bold;
 	}
+    label.addbutton:hover {
+        cursor: pointer;
+        font-weight: bold;
+    }
     .slideshow
     {
         width:100%;

@@ -1,5 +1,4 @@
 <section class="main-section">
-<button *ngIf="book" [routerLink]="['/edit-book',book._id]" >Edit Book</button>
 
   <div class="book-view">
     <div class="book-image">
@@ -15,8 +14,12 @@
       <div *ngIf="book">
         <!--allows to reload information drawn from API-->
         <P>{{book.genre}}</P>
-        <p>{{book.description}}</p>
+        <p class="description-tag">{{book.description}}</p>
       </div>
+    </div>
+    <div class="btn-container">
+      <button class="edit-book-btn" *ngIf="book" [routerLink]="['/edit-book',book._id]">Edit Book</button>
+      <button class="remove-book-btn" (click)="deleteBook(book._id)">Remove Book</button>
     </div>
   </div>
   <div class="book-details">
@@ -28,9 +31,7 @@
       <P>$ {{book.price}}</P>
     </div>
     <div class="add-to-cart">
-      <!--<button onclick="submit()" class="cart-button" type="button" name="submit">Add to Cart</button>-->
       <button class="cart-button" type="button" name="submit" (click)="goToCart()">Add to Cart</button>
-
     </div>
     <div class="shipping-details">
       <p>Eligible for FREE SHIPPING</p>
@@ -42,7 +43,7 @@
     <bookmore></bookmore>
   </div>
   <ul>
-    <div class="book-card" *ngFor="let book of books | slice:0:1" [routerLink]="['book',book._id] ">
+    <div class="book-card" *ngFor="let book of books | slice:0:1" [routerLink]="['/book',book._id] ">
       <section class="book-image">
         <img src="../assets/img/placeholder.png">
       </section>

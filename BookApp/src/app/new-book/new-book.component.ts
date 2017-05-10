@@ -22,6 +22,9 @@ export class NewBookComponent implements OnInit {
     console.log('book',book);
     this.bookService.addBook(book).then((resp) => {
       console.log('response from addBook....', resp);
+    if(resp) {
+      this.book.resp;
+    }
     });
   }
 

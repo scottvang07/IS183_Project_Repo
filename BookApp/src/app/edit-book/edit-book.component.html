@@ -1,9 +1,18 @@
-<h1>Edit Book</h1>
-<div *ngIf="book">
-  <span>{{book?.name}}</span>
-  <input type="text" [(ngModel)]="book.title">
-  <input type="text" [(ngModel)]="book.description">
-  <input type="text" [(ngModel)]="book.genre">
-  <input type="text" [(ngModel)]="book.price">
-  <button (click)="editBook(book)">test</button>
+<div class="edit-book-container">
+  <h1>Edit Book</h1>
+  <div *ngIf="book">
+    <span>{{book?.name}}</span>
+    <label for="book-title">Title:</label>
+    <input type="text" [(ngModel)]="book.title">
+    <label for="book-author">Author:</label>
+    <input type="text" [(ngModel)]="book.author">
+    <label for="book-description">Description:</label>
+    <!--<input class ="description-text-area" type="text" [(ngModel)]="book.description"> -->
+    <textarea name="description" type="text" [(ngModel)]="book.description" cols="30" rows="30"></textarea>
+    <label for="book-genre">Genre:</label>
+    <input type="text" [(ngModel)]="book.genre">
+    <label for="book-price">Price:</label>
+    <input type="text" [(ngModel)]="book.price">
+    <button class="edit-book" (click)="editBook(book)">Submit</button>
+  </div>
 </div>

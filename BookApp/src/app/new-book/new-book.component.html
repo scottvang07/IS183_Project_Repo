@@ -1,9 +1,16 @@
-<h1>Add New Book</h1>
-<div>
+<div class="new-book-container">
+  <h1>Add New Book</h1>
   <span>{{book.name}}</span>
-  <input type="text" [(ngModel)]="book.title">
-  <input type="text" [(ngModel)]="book.description">
+  <label class="label-tag" for="book-title">Title:</label>
+  <input class = "input-containter" type="text" [(ngModel)]="book.title">
+  <label for="book-author">Author:</label>
+    <input type="text" [(ngModel)]="book.author">
+  <label for="book-description">Description:</label>
+  <!--<input type="text" [(ngModel)]="book.description">-->
+  <textarea name="description" type="text" [(ngModel)]="book.description" cols="30" rows="30"></textarea>
+  <label for="book-genre">Genre:</label>
   <input type="text" [(ngModel)]="book.genre">
+  <label for="book-price">Price:</label>
   <input type="text" [(ngModel)]="book.price">
-  <button (click)="addBook(book)">test</button>
+  <button class ="new-book" (click)="addBook(book)">Submit</button>
 </div>

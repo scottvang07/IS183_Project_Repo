@@ -32,6 +32,12 @@ export class BookComponent implements OnInit {
     console.log('go to cart....;');
     this.router.navigate(['cart']);
   }
+
+  deleteBook(id:string) {
+    console.log(`deleting book with id of : ${id}`);
+    this.bookService.deleteBook(id);
+    this.router.navigate(['']);
+  }
   
   
 

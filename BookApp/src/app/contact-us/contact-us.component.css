@@ -8,9 +8,22 @@
 	font-size:16px;
     height:500px;
 	}
+	/* style for contact-us container*/
+	section.contact-picture {
+		width: 100%;
+		height: 400px;
+		background-color: pink;
+		
+	}
+	/* style for contact-us image*/
+	section.contact-picture img {
+		width: 100%;
+		height: 100%;
+		border-radius: 15px;
+	}
 	label
 	{
-		font-size:14px;
+		font-size: 18px;
 	}
 	.f_name
 	{
@@ -47,20 +60,8 @@
       resize: none;
 	  border-radius: 10px;
 	}
-
-	button.grid-button 
-	{   
-		padding:3px; 
-		margin-bottom:5px;
-		border:1px solid black;
-		height:24px;
-    	cursor:pointer;
-		background-color:transparent;
-    	-webkit-border-radius: 5px;
-    	border-radius: 5px; 
-		font-size:12px;
-		float:right;
-    }
+	
+	/* style for button*/
 	#submit
 	{
         margin: 10px 10px;
@@ -72,7 +73,7 @@
 		background-color:transparent;
     	-webkit-border-radius: 5px;
     	border-radius: 5px; 
-		font-size:12px;
+		font-size: 16px;
 	}
 	#submit:hover {
 		background-color:#CCC;
